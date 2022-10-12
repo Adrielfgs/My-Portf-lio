@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+    background-color: black;
+}
+
+.nav {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+}
+
+.navbar-item {
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+}
+
+.profile {
+    margin-right: 20px;
+    width: 300px;
+    max-width: 300px;
+    padding: 2%;
+    border-radius: 20%;
+    display:flex ;
+}
+
+.intro {
+    color: rgb(0, 188, 188);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.resum {
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top {
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    padding: 2%;
+}
+
+.top-right {
+    width: auto;
+    align-items: center;
+}
+
+.intro:after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: flash .7s infinite;
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.nav a.active {
+    color: rgb(0, 188, 188);
+}
